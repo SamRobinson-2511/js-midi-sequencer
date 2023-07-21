@@ -1,3 +1,6 @@
+let steps = 16;
+
+
 function init(){
   WebMidi.enable(err => {
     if(err){
@@ -24,6 +27,6 @@ function startLoop(){
   let step = 1;
   setInterval(()=>{
     output.playNote(note, channel, {duration, attack})
-    console.log(note, attack, duration, channel)
+    console.log(note, attack, duration, channel, step)
   }, 1000)
 }
