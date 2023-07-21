@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSequencer</title>
+</head>
+<body>
+  <div onclick="init()" class="button">Start</div>
+  <div onclick="stop()" class="button">Stop</div>
+  <label for="myRadioId" class="radio">
+    <input type="radio" name="myRadioField" id="myRadioId" class="radio__input">
+    <div class="radio__radio"></div>
+  </label>
+  <script src="app.js"></script>
+</body>
+</html>
